@@ -147,22 +147,6 @@ Nilai *crisp* hasil defuzzifikasi ditambahkan ke nilai PID awal, lalu dikirim ke
 
 ---
 
-## 7. Tugas & Evaluasi Mahasiswa (Project-Based Learning)
-
-### Tugas Simulasi MATLAB / Simulink
-
-1. Buatlah model Simulink untuk sistem kendali posisi Motor DC dengan beban yang berubah-ubah (misal: inersia berubah di detik ke-5)
-2. Bandingkan respons transien dari:
-   - PID Konvensional (Tuning Ziegler-Nichols)
-   - Fuzzy PID (Gunakan 7 level linguistik)
-3. Ukur dan bandingkan metrik kinerja:
-   - *Rise Time*
-   - *Overshoot*
-   - *Settling Time*
-   - *Steady-State Error*
-4. Buat laporan singkat yang menjelaskan **mengapa** Fuzzy PID memberikan hasil yang lebih baik berdasarkan analisis aturan fuzzy yang Anda buat
-
----
 
 ## 8. Referensi Bacaan Lanjutan
 
