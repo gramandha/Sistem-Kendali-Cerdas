@@ -171,5 +171,3 @@ Nilai *crisp* hasil defuzzifikasi ditambahkan ke nilai PID awal, lalu dikirim ke
 3. Ogata, K. (2010). *Modern Control Engineering*. (Sebagai referensi dasar teori PID)
 
 ---
-
-*Catatan untuk Pengajar: Materi ini dapat dengan mudah dikonversi menjadi 10-15 slide presentasi PowerPoint. Fokuskan presentasi pada bagian "Prinsip Aturan (Rule Base)" karena di situlah letak kecerdasan (inteligensi) dari sistem ini.*
