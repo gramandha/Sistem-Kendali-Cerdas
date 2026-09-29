@@ -73,7 +73,7 @@ Tanpa fungsi aktivasi nonlinier, tumpukan banyak lapisan tetap setara dengan sat
 
 Neuron disusun dalam lapisan. Pada jaringan feedforward, sinyal hanya mengalir satu arah dari input ke keluaran, dan setiap neuron terhubung ke semua neuron di lapisan berikutnya (fully connected).
 
-![Arsitektur MLP 3–4–2](gambar/arsitektur-mlp.png)
+![Arsitektur MLP 3–4–2](arsitektur-mlp.png)
 
 | Lapisan | Fungsi | Jumlah neuron |
 | --- | --- | --- |
