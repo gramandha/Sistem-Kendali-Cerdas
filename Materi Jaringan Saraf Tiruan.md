@@ -38,7 +38,7 @@ JST cocok untuk masalah yang polanya sulit dirumuskan dengan aturan eksplisit, t
 
 Satu neuron menghitung jumlahan berbobot dari masukannya, menambahkan bias, lalu melewatkan hasilnya ke fungsi aktivasi.
 
-```latex
+```math
 z = \sum_{i=1}^{n} w_i x_i + b = \mathbf{w}^{T}\mathbf{x} + b, \qquad y = f(z)
 ```
 
@@ -73,7 +73,7 @@ Tanpa fungsi aktivasi nonlinier, tumpukan banyak lapisan tetap setara dengan sat
 
 Neuron disusun dalam lapisan. Pada jaringan feedforward, sinyal hanya mengalir satu arah dari input ke keluaran, dan setiap neuron terhubung ke semua neuron di lapisan berikutnya (fully connected).
 
-&#91;embedded content: arsitektur MLP · 3 lapisan\]
+![Arsitektur MLP 3–4–2](gambar/arsitektur-mlp.png)
 
 | Lapisan | Fungsi | Jumlah neuron |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ JST belajar dengan mengulang tiga langkah: menghitung prediksi (forward), menguk
 
 Data masuk ke lapisan input, lalu dihitung lapis demi lapis sampai keluaran. Untuk lapisan ke-l:
 
-```latex
+```math
 \mathbf{z}^{(l)} = \mathbf{W}^{(l)}\mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}, \qquad \mathbf{a}^{(l)} = f\left(\mathbf{z}^{(l)}\right)
 ```
 
@@ -113,7 +113,7 @@ Fungsi loss mengukur seberapa jauh prediksi ŷ dari target y. Makin kecil loss, 
 
 Bobot diperbarui berlawanan arah dengan gradien loss, seperti menuruni lembah menuju titik terendah:
 
-```latex
+```math
 w \leftarrow w - \eta \frac{\partial L}{\partial w}, \qquad b \leftarrow b - \eta \frac{\partial L}{\partial b}
 ```
 
@@ -133,13 +133,13 @@ Backpropagation menghitung ∂L/∂w untuk semua bobot secara efisien dengan **a
 
 Definisikan error lokal (delta) setiap neuron, δ = ∂L/∂z:
 
-```latex
+```math
 \delta^{(L)} = \frac{\partial L}{\partial \hat{y}} \cdot f'\left(z^{(L)}\right), \qquad \delta_j^{(l)} = \left( \sum_{k} w_{kj}^{(l+1)} \delta_k^{(l+1)} \right) f'\left(z_j^{(l)}\right)
 ```
 
 Gradien setiap bobot adalah delta neuron tujuan dikalikan aktivasi neuron asal:
 
-```latex
+```math
 \frac{\partial L}{\partial w_{ji}^{(l)}} = \delta_j^{(l)}\, a_i^{(l-1)}, \qquad \frac{\partial L}{\partial b_j^{(l)}} = \delta_j^{(l)}
 ```
 
@@ -162,7 +162,7 @@ Latih perceptron dengan fungsi step (y = 1 jika z ≥ 0, selainnya 0) agar menir
 
 Aturan belajar perceptron, dengan t adalah target:
 
-```latex
+```math
 w_i \leftarrow w_i + \eta\,(t - y)\,x_i, \qquad b \leftarrow b + \eta\,(t - y)
 ```
 
@@ -238,7 +238,7 @@ Arsitektur JST dipilih sesuai bentuk datanya. Data tabel cocok dengan MLP, gamba
 
 Lapisan konvolusi pada CNN menjalankan operasi yang sama dengan konvolusi diskrit di materi sebelumnya. Kernel (filter) berperan seperti h\[n\], sedangkan sinyal masukan berperan seperti x\[n\]:
 
-```latex
+```math
 y[n] = \sum_{k=0}^{K-1} w[k]\, x[n+k] + b
 ```
 
