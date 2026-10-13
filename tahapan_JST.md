@@ -4,7 +4,7 @@ Dokumen ini menjelaskan alur kerja lengkap pelatihan Jaringan Syaraf Tiruan (Art
 
 ---
 
-## 📋 Alur Kerja Utama Pelatihan JST (Overall Workflow)
+##  Alur Kerja Utama Pelatihan JST (Overall Workflow)
 
 Proses pelatihan JST menggunakan metode iteratif yang disebut **Epoch**. Satu Epoch terdiri dari urutan langkah berikut:
 
