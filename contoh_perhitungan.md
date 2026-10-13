@@ -10,7 +10,7 @@ $$\text{ReLU}(z) = \max(0, z)$$
 
 Serta turunan fungsinya untuk proses backpropagation:
 
-$$\text{ReLU}'(z) = \begin{cases} 1 & \text{jika } z > 0 \\, 0 & \text{jika } z \le 0 \end{cases}$$
+$$\text{ReLU}'(z) = \begin{cases} 1 & \text{jika } z > 0 \\ ,0 & \text{jika } z \le 0 \end{cases}$$
 
 Konstanta **Learning Rate ($\alpha$) ditetapkan sebesar 0.1**.
 
