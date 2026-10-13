@@ -1,4 +1,4 @@
-# 📑 Studi Kasus Perhitungan Manual JST (Aktivasi ReLU)
+# Studi Kasus Perhitungan Manual JST (Aktivasi ReLU)
 
 Mari kita lakukan simulasi perhitungan manual pada sebuah jaringan saraf tiruan sederhana dengan arsitektur:
 *   **1 Input Neuron ($x$)**
@@ -85,11 +85,11 @@ $$\delta_{hidden} = (-0.44 \cdot 0.8) \cdot 1 = -0.352$$
 
 Sekarang kita perbarui semua bobot dan bias awal menggunakan **Learning Rate ($\alpha$) = 0.1**.
 
-### 🛠️ Perbaikan di Output Layer:
+###  Perbaikan di Output Layer:
 *   $$w_{2\_baru} = w_2 - (\alpha \cdot \frac{\partial L}{\partial w_2}) = 0.8 - (0.1 \cdot -0.528) = 0.8 + 0.0528 = \mathbf{0.8528}$$
 *   $$b_{2\_baru} = b_2 - (\alpha \cdot \frac{\partial L}{\partial b_2}) = 0.1 - (0.1 \cdot -0.44) = 0.1 + 0.044 = \mathbf{0.144}$$
 
-### 🛠️ Perbaikan di Hidden Layer:
+###  Perbaikan di Hidden Layer:
 *   $$w_{1\_baru} = w_1 - (\alpha \cdot \frac{\partial L}{\partial w_1}) = 0.5 - (0.1 \cdot -0.704) = 0.5 + 0.0704 = \mathbf{0.5704}$$
 *   $$b_{1\_baru} = b_1 - (\alpha \cdot \frac{\partial L}{\partial b_1}) = 0.2 - (0.1 \cdot -0.352) = 0.2 + 0.0352 = \mathbf{0.2352}$$
 
